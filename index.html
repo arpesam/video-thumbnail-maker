@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cover maker</title>
+    <script src="https://cdn.jsdelivr.net/gh/WangYuLue/image-conversion/build/conversion.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="details" id="bg-color-output">
+        <div>
+          <h3 class="details-text" id="lesson-title-output">Lição:</h3>
+          <h3 class="details-text" id="lesson-duration-output">Duração:</h3>
+        </div>
+      </div>
+      <div class="background"></div>
+    </div>
+    <p></p>
+    <label for="lesson-title-input">Lição</label><br />
+    <input type="text" id="lesson-title-input" onkeyup="modifyLessonTitle()" />
+    <p></p>
+    <label for="lesson-duration-input">Duração</label><br />
+    <input
+      type="text"
+      id="lesson-duration-input"
+      onkeyup="modifyLessonDuration()"
+    />
+    <p></p>
+    <label for="bg-color-input">Cor de fundo</label><br />
+    <input type="text" id="bg-color-input" onkeyup="modifyTitleBgColor()" />
+    <p></p>
+    <label for="text-color-input">Cor do texto</label><br />
+    <input type="text" id="text-color-input" onkeyup="modifyTextColor()" />
+    <p></p>
+    <input type="file" id="read-file-btn" onchange="load()" />
+    <p></p>
+    <button onclick="capture()">Print</button>
+    <p></p>
+    <a href="https://tinypng.com/" target="_blank">Tiny PNG</a>
+    <p></p>
+    <a
+      href="https://imagekit.io/blog/how-to-resize-image-in-html/"
+      target="_blank"
+      >Img sizing</a
+    >
+    <p></p>
+    <a
+      href="https://g.co/kgs/RWyEeC"
+      target="_blank"
+      >Color picker</a
+    >
+  </body>
+</html>
